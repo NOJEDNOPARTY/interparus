@@ -401,6 +401,7 @@ header {
     position: absolute;
     top: 100%;
     left: 50%;
+    z-index: 3;
     display: none;
     min-width: 190px;
     padding: 84px 15px 30px 33px;
@@ -444,6 +445,7 @@ header {
     position: absolute;
     top: 100%;
     right: 6px;
+    z-index: 3;
     width: 100%;
     display: none;
     max-width: 930px;
@@ -479,14 +481,17 @@ header {
         width: 100%; }
 
 .banner {
-  padding: 210px 0 0;
-  background-position: center !important;
-  background-size: cover !important;
-  background-repeat: no-repeat !important;
-  transition: 0.3s ease; }
+  position: relative; }
+  .banner-cnt {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 210px 0 0; }
 
 .head-title {
-  padding-bottom: 208px; }
+  padding-bottom: 203px; }
   .head-title h1 {
     font-family: 'Circe-ExtraLight';
     font-size: 114px;
@@ -511,5 +516,47 @@ header {
     line-height: 21px;
     text-transform: uppercase;
     color: #ffffff; }
+
+.catalog-list {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto; }
+  .catalog-list .catalog-link {
+    position: relative;
+    display: block;
+    width: 50%;
+    max-height: 347px; }
+    .catalog-list .catalog-link img {
+      width: 100%; }
+    .catalog-list .catalog-link span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      padding: 10px;
+      font-family: 'Circe-Bold';
+      font-size: 36px;
+      line-height: 36px;
+      text-transform: uppercase;
+      text-align: center;
+      transform: translate(-50%);
+      color: #ffffff; }
+      .catalog-list .catalog-link span::before {
+        content: '';
+        position: absolute;
+        top: calc(100% + 20px);
+        left: calc(50% - 1.5px);
+        width: 46px;
+        height: 3px;
+        transform: translateX(-50%);
+        display: block;
+        background-color: #d6d6d6;
+        transition: 0.3s ease; }
+    .catalog-list .catalog-link:hover span::before {
+      left: calc(50% - 23px);
+      transform: rotate(90deg); }
 
 /*# sourceMappingURL=maps/style.css.map */

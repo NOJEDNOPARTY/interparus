@@ -63,7 +63,12 @@ var common = {
 			loop:true,
 			margin:0,
 			nav: false,
-			dots: false
+			dots: false,
+			autoHeight: true,
+			smartSpeed: 2000,
+			animateOut: 'fadeOut',
+			animateIn: 'fadeIn',
+			// autoplay: true
 		})
 		
 	},

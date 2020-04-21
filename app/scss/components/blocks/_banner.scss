@@ -1,13 +1,18 @@
+
 .banner {
-    padding: 210px 0 0;
-    background-position: center !important;
-    background-size: cover !important;
-    background-repeat: no-repeat !important;
-    transition: 0.3s ease;
+    position: relative;
+    &-cnt {
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 210px 0 0;
+    }
 }
 
 .head-title {
-    padding-bottom: 208px;
+    padding-bottom: 203px;
     & h1 {
         font-family: 'Circe-ExtraLight';
         font-size: 114px;
