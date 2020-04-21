@@ -7,123 +7,99 @@
     font-style: italic;
 }
 
+
+
+
+
+
+
+// Circe
+
 @font-face {
-    font-family: 'HelveticaNeueCyr-Black';
-    src: url('../css/fonts/helveticaneuecyr/HelveticaNeueCyr-Black.woff2') format('woff2'),
-        url('../css/fonts/helveticaneuecyr/HelveticaNeueCyr-Black.woff') format('woff');
-    font-weight: 900;
+    font-family: 'Circe-ExtraLight';
+    src: url('../css/fonts/circe/Circe-ExtraLight.woff2') format('woff2'),
+        url('../css/fonts/circe/Circe-ExtraLight.woff') format('woff');
+    font-weight: 200;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'HelveticaNeueCyr-Roman';
-    src: url('../css/fonts/helveticaneuecyr/HelveticaNeueCyr-Roman.woff2') format('woff2'),
-        url('../css/fonts/helveticaneuecyr/HelveticaNeueCyr-Roman.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'HelveticaNeueCyr-HeavyItalic.';
-    src: url('../css/fonts/helveticaneuecyr/HelveticaNeueCyr-HeavyItalic.woff2') format('woff2'),
-        url('../css/fonts/helveticaneuecyr/HelveticaNeueCyr-HeavyItalic.woff') format('woff');
-    font-weight: 900;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'HelveticaNeueCyr-Light';
-    src: url('../css/fonts/helveticaneuecyr/HelveticaNeueCyr-Light.woff2') format('woff2'),
-        url('../css/fonts/helveticaneuecyr/HelveticaNeueCyr-Light.woff') format('woff');
+    font-family: 'Circe-Light';
+    src: url('../css/fonts/circe/Circe-Light.woff2') format('woff2'),
+        url('../css/fonts/circe/Circe-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'HelveticaNeueCyr-Bold';
-    src: url('../css/fonts/helveticaneuecyr/HelveticaNeueCyr-Bold.woff2') format('woff2'),
-        url('../css/fonts/helveticaneuecyr/HelveticaNeueCyr-Bold.woff') format('woff');
+    font-family: 'Circe-Bold';
+    src: url('../css/fonts/circe/Circe-Bold.woff2') format('woff2'),
+        url('../css/fonts/circe/Circe-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+// Century
+
+@font-face {
+    font-family: 'Century Gothic-Bold';
+    src: url('../css/fonts/century/CenturyGothic-Bold.woff2') format('woff2'),
+        url('../css/fonts/century/CenturyGothic-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'HelveticaNeueCyr-Heavy';
-    src: url('../css/fonts/helveticaneuecyr/HelveticaNeueCyr-Heavy.woff2') format('woff2'),
-        url('../css/fonts/helveticaneuecyr/HelveticaNeueCyr-Heavy.woff') format('woff');
-    font-weight: 900;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'HelveticaNeueCyr-BlackItalic';
-    src: url('../css/fonts/helveticaneuecyr/HelveticaNeueCyr-BlackItalic.woff2') format('woff2'),
-        url('../css/fonts/helveticaneuecyr/HelveticaNeueCyr-BlackItalic.woff') format('woff');
-    font-weight: 900;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'HelveticaNeueCyr-Medium';
-    src: url('../css/fonts/helveticaneuecyr/HelveticaNeueCyr-Medium.woff2') format('woff2'),
-        url('../css/fonts/helveticaneuecyr/HelveticaNeueCyr-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'HelveticaNeueCyr-LightItalic';
-    src: url('../css/fonts/helveticaneuecyr/HelveticaNeueCyr-LightItalic.woff2') format('woff2'),
-        url('../css/fonts/helveticaneuecyr/HelveticaNeueCyr-LightItalic.woff') format('woff');
-    font-weight: 300;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'HelveticaNeueCyr-BoldItali';
-    src: url('../css/fonts/helveticaneuecyr/HelveticaNeueCyr-BoldItalic.woff2') format('woff2'),
-        url('../css/fonts/helveticaneuecyr/HelveticaNeueCyr-BoldItalic.woff') format('woff');
-    font-weight: bold;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'HelveticaNeueCyr-Thin';
-    src: url('../css/fonts/helveticaneuecyr/HelveticaNeueCyr-Thin.woff2') format('woff2'),
-        url('../css/fonts/helveticaneuecyr/HelveticaNeueCyr-Thin.woff') format('woff');
-    font-weight: 100;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'HelveticaNeueCyr-Italic';
-    src: url('../css/fonts/helveticaneuecyr/HelveticaNeueCyr-Italic.woff2') format('woff2'),
-        url('../css/fonts/helveticaneuecyr/HelveticaNeueCyr-Italic.woff') format('woff');
+    font-family: 'Century Gothic Regular';
+    src: url('../css/fonts/century/CenturyGothic.woff2') format('woff2'),
+        url('../css/fonts/century/CenturyGothic.woff') format('woff');
     font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'HelveticaNeueCyr-UltraLightItalic';
-    src: url('../css/fonts/helveticaneuecyr/HelveticaNeueCyr-UltraLightItalic.woff2') format('woff2'),
-        url('../css/fonts/helveticaneuecyr/HelveticaNeueCyr-UltraLightItalic.woff') format('woff');
-    font-weight: 200;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'HelveticaNeueCyr-ThinItalic';
-    src: url('../css/fonts/helveticaneuecyr/HelveticaNeueCyr-ThinItalic.woff2') format('woff2'),
-        url('../css/fonts/helveticaneuecyr/HelveticaNeueCyr-ThinItalic.woff') format('woff');
-    font-weight: 100;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'HelveticaNeueCyr-UltraLight';
-    src: url('../css/fonts/helveticaneuecyr/HelveticaNeueCyr-UltraLight.woff2') format('woff2'),
-        url('../css/fonts/helveticaneuecyr/HelveticaNeueCyr-UltraLight.woff') format('woff');
-    font-weight: 200;
     font-style: normal;
 }
 
+// Gilroy
+
+@font-face {
+    font-family: 'Gilroy-Extrabold';
+    src: url('../css/fonts/gilroy/Gilroy-Extrabold.woff2') format('woff2'),
+        url('../css/fonts/gilroy/Gilroy-Extrabold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Gilroy-Regular';
+    src: url('../css/fonts/gilroy/Gilroy-Regular.woff2') format('woff2'),
+        url('../css/fonts/gilroy/Gilroy-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy-Semibold';
+    src: url('../css/fonts/gilroy/Gilroy-Semibold.woff2') format('woff2'),
+        url('../css/fonts/gilroy/Gilroy-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+// Futura PT Book
+
+@font-face {
+    font-family: 'Futura PT Book';
+    src: url('../css/fonts/futuraPT/FuturaPT-Book.woff2') format('woff2'),
+        url('../css/fonts/futuraPT/FuturaPT-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// Open Sans
+
+@font-face {
+    font-family: 'Open Sans-Regular';
+    src: url('../css/fonts/opensans/OpenSans-Regular.woff2') format('woff2'),
+        url('../css/fonts/opensans/OpenSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

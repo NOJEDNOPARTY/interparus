@@ -1,0 +1,150 @@
+body {background-color: #000000;}
+header {
+    background: #ffffff;
+    & .wrapper {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1170px;
+        padding-top: 34px;
+        padding-bottom: 34px;
+    }
+    & .logo {
+        width: 100%;
+        max-width: 178px;
+        margin-right: 43px;
+        & img {width: 100%;}
+    }
+    & .menu,
+    & .hidden-menu  {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        & li {
+            position: relative;
+            &:not(:last-child) {margin: 0 33px 0 0;}
+            & > span,
+            & > a {
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                font-family: 'Gilroy-Regular';
+                font-size: 16px;
+                line-height: 16px;
+                color: #5b5b5b;
+                transition: 0.3s ease;
+                & svg {
+                    width: 8px;
+                    height: 4px;
+                    margin-left: 6px;
+                    transition: 0.3s ease;
+                    & .cls-1 {
+                        fill: #5b5b5b;
+                        transition: 0.3s ease;
+                    }
+                }
+            }
+            &:hover {& > a {color: #06828a;}}
+            &.open {
+                & > span,
+                & > a {
+                    color: #06828a;
+                    & svg {
+                        transform: rotate(180deg);
+                        & .cls-1 {fill: #06828a;}
+                    }
+                }
+            }
+        }
+    }
+    & .hidden-menu {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        display: none;
+        min-width: 190px;
+        padding: 84px 15px 30px 33px;
+        background-color: #ffffff;
+        transform: translateX(-50%);
+        & a:hover {color: #06828a;}
+        &::before {
+            content: '';
+            position: absolute;
+            top: 5px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: block;
+            width: 1px;
+            height: 28px;
+            background-color: #ebebeb;
+        }
+        & li {
+            &:not(:last-child) {margin: 0 0 29px;}
+        }
+    }
+    & .header-triggers {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-left: 25px;
+        & .search-trigger {
+            display: block;
+            width: 16px;
+            min-width: 16px;
+            height: 16px;
+            margin-right: 24px;
+            & img {width: 100%;}
+        }
+        & .whatsapp {
+            display: block;
+            width: 21px;
+            min-width: 21px;
+            height: 21px;
+            & img {width: 100%;}
+        }
+    }
+    & .search-field {
+        position: absolute;
+        top: 100%;
+        right: 6px;
+        width: 100%;
+        display: none;
+        max-width: 930px;
+        padding: 14px 33px 25px 47px;
+        background-color: #ffffff;
+        & form {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+        & input {
+            width: 100%;
+            max-width: 788px;
+            margin-right: 10px;
+            border: none;
+            background-color: transparent;
+            font-family: 'Circe-Light';
+            font-size: 16px;
+            line-height: 16px;
+            color: #939393;
+            border-bottom: 1px solid #ebebeb;
+            transition: 0.3s ease;
+            &:focus {border-bottom: 1px solid #06828a;}
+        }
+        & button {
+            width: 25px;
+            min-width: 25px;
+            height: 25px;
+            background: none;
+            border: none;
+            outline: none;
+            & img {width: 100%;}
+        }
+    }
+}

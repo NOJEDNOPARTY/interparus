@@ -1,0 +1,39 @@
+.banner {
+    padding: 210px 0 0;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    transition: 0.3s ease;
+}
+
+.head-title {
+    padding-bottom: 208px;
+    & h1 {
+        font-family: 'Circe-ExtraLight';
+        font-size: 114px;
+        line-height: 121px;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+    & p {
+        font-family: 'Circe-Light';
+        padding-left: 78px;
+        font-size: 47px;
+        line-height: 47px;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+}
+
+.banner-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    & p {
+        font-family: 'Circe-Bold';
+        font-size: 32px;
+        line-height: 21px;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+}
