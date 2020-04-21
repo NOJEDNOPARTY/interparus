@@ -1,0 +1,28 @@
+{
+  "name": "000_temp",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.com:000_temp"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-plugin-uglify": "^1.0.2",
+    "babel-preset-es2015": "^6.22.0",
+    "express": "^4.17.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-connect": "^5.7.0",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "^3.2.1",
+    "gulp-scss": "^1.4.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^2.0.1",
+    "gulp-uglifyjs": "^0.6.2",
+    "node-sass": "^4.13.1",
+    "rimraf": "^2.3.2"
+  }
+}
