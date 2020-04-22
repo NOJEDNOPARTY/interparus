@@ -9,6 +9,19 @@
         width: 100%;
         padding: 210px 0 0;
     }
+    &::before {
+        content: '';
+        position: absolute;
+        z-index: 2;
+        top: calc(100%);
+        left: calc(50% - 0.5px);
+        width: 1px;
+        height: 155px;
+        transform: translateX(-50%);
+        display: block;
+        background-color: #d6d6d6;
+        transition: 0.3s ease;
+    }
 }
 
 .head-title {
@@ -37,7 +50,7 @@
     & p {
         font-family: 'Circe-Bold';
         font-size: 32px;
-        line-height: 21px;
+        line-height: 23px;
         text-transform: uppercase;
         color: #ffffff;
     }

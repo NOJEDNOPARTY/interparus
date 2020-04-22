@@ -1,0 +1,210 @@
+header {
+  background: #ffffff;
+}
+header .wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1170px;
+  padding-top: 34px;
+  padding-bottom: 34px;
+}
+header .logo {
+  width: 100%;
+  max-width: 178px;
+  margin-right: 43px;
+}
+header .logo img {
+  width: 100%;
+}
+header .menu,
+header .hidden-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+header .menu li,
+header .hidden-menu li {
+  position: relative;
+}
+header .menu li:not(:last-child),
+header .hidden-menu li:not(:last-child) {
+  margin: 0 33px 0 0;
+}
+header .menu li > span,
+header .menu li > a,
+header .hidden-menu li > span,
+header .hidden-menu li > a {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: "Gilroy-Regular";
+  font-size: 16px;
+  line-height: 16px;
+  color: #5b5b5b;
+  transition: 0.3s ease;
+}
+header .menu li > span svg,
+header .menu li > a svg,
+header .hidden-menu li > span svg,
+header .hidden-menu li > a svg {
+  width: 8px;
+  height: 4px;
+  margin-left: 6px;
+  transition: 0.3s ease;
+}
+header .menu li > span svg .cls-1,
+header .menu li > a svg .cls-1,
+header .hidden-menu li > span svg .cls-1,
+header .hidden-menu li > a svg .cls-1 {
+  fill: #5b5b5b;
+  transition: 0.3s ease;
+}
+header .menu li:hover > a,
+header .hidden-menu li:hover > a {
+  color: #06828a;
+}
+header .menu li.open > span,
+header .menu li.open > a,
+header .hidden-menu li.open > span,
+header .hidden-menu li.open > a {
+  color: #06828a;
+}
+header .menu li.open > span svg,
+header .menu li.open > a svg,
+header .hidden-menu li.open > span svg,
+header .hidden-menu li.open > a svg {
+  transform: rotate(180deg);
+}
+header .menu li.open > span svg .cls-1,
+header .menu li.open > a svg .cls-1,
+header .hidden-menu li.open > span svg .cls-1,
+header .hidden-menu li.open > a svg .cls-1 {
+  fill: #06828a;
+}
+header .hidden-menu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  z-index: 3;
+  display: none;
+  min-width: 190px;
+  padding: 84px 15px 30px 33px;
+  background-color: #ffffff;
+  transform: translateX(-50%);
+}
+header .hidden-menu .interesting-menu {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-flow: column wrap;
+  margin: 0;
+  padding: 0;
+  width: 423px;
+  list-style: none;
+  max-height: 300px;
+}
+header .hidden-menu .interesting-menu li:not(:last-child) {
+  margin: 0 5px 29px 0;
+}
+header .hidden-menu a:hover {
+  color: #06828a;
+}
+header .hidden-menu::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: 1px;
+  height: 28px;
+  background-color: #ebebeb;
+}
+header .hidden-menu li:not(:last-child) {
+  margin: 0 0 29px;
+}
+header .header-triggers {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 25px;
+}
+header .header-triggers .search-trigger {
+  display: block;
+  width: 16px;
+  min-width: 16px;
+  height: 16px;
+  margin-right: 24px;
+}
+header .header-triggers .search-trigger img {
+  width: 100%;
+}
+header .header-triggers .whatsapp {
+  display: block;
+  width: 21px;
+  min-width: 21px;
+  height: 21px;
+}
+header .header-triggers .whatsapp img {
+  width: 100%;
+}
+header .search-field {
+  position: absolute;
+  top: 100%;
+  right: 6px;
+  z-index: 3;
+  width: 100%;
+  display: none;
+  max-width: 930px;
+  padding: 14px 33px 25px 47px;
+  background-color: #ffffff;
+}
+header .search-field form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+header .search-field input {
+  width: 100%;
+  max-width: 788px;
+  margin-right: 10px;
+  border: none;
+  background-color: transparent;
+  font-family: "Circe-Light";
+  font-size: 16px;
+  line-height: 16px;
+  color: #939393;
+  border-bottom: 1px solid #ebebeb;
+  transition: 0.3s ease;
+}
+header .search-field input:focus {
+  border-bottom: 1px solid #06828a;
+}
+header .search-field .search-reset {
+  width: 25px;
+  min-width: 25px;
+  height: 25px;
+  outline: none;
+}
+header .search-field .search-reset img {
+  width: 100%;
+}
+header.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 7;
+  box-shadow: 0 0 15px lightgray;
+}
+header.fixed .search-field,
+header.fixed .hidden-menu {
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.12);
+}

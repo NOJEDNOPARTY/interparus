@@ -1,0 +1,125 @@
+footer {
+    padding: 85px 0;
+    background-color: #252525;
+}
+
+.footer {
+    &-row {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        &:not(:last-child) {margin-bottom: 53px;}
+        &-3 {
+            align-items: center;
+            & p,
+            & a {
+                font-family: 'Gilroy-Regular';
+                font-size: 16px;
+                line-height: 16px;
+                color: #ffffff;
+            }
+            & .developed {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                & img {margin-left: 4px;}
+            }
+        }
+    }
+    &-logo {
+        display: inline-block;
+        margin-right: 35px;
+        font-family: 'Gilroy-Semibold';
+        font-size: 26px;
+        line-height: 26px;
+        color: #ffffff;
+    }
+    &-column {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        & form {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .form-field:not(:last-child) {margin-right: 18px;}
+    }
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 207px;
+    border-bottom: 1px solid #393939;
+    & input {
+        width: 100%;
+        height: 30px;
+        padding: 0 28px 12px 11px;
+        background: none;
+        border: none;
+        outline: none;
+        font-family: 'Futura PT Book';
+        font-size: 16px;
+        line-height: 16px;
+        color: #878787;
+    }
+    & button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 30px;
+        width: 28px;
+        background: none;
+        & img {
+            width: 14px;
+            height: 14px;
+        }
+    }
+}
+
+.subscribe {
+    width: 100%;
+    max-width: 673px;
+    form {width: 100%;}
+}
+
+.link-block {
+    &-title {
+        margin-bottom: 10px;
+        font-family: 'Century Gothic-Bold';
+        font-size: 21px;
+        line-height: 21px;
+        color: #ffffff;
+    }
+    & p,
+    & a {
+        font-family: 'Century Gothic Regular';
+        font-size: 16px;
+        line-height: 16px;
+        color: #ffffff;
+        border-bottom: 1px solid transparent;
+        transition: 0.3s ease;
+    }
+    & a:hover {border-bottom: 1px solid #484848;}
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 3px;
+    & a {
+        &:not(:last-child) {margin-right: 10px;}
+        & img {
+            &.whatsapp {width: 24px;}
+            &.facebook {width: 22px;}
+            &.instagram {width: 22px;}
+            &.youtube {width: 30px;}
+            &.twitter {width: 28px;}
+            &.pintarest {width: 23px;}
+        }
+    }
+}

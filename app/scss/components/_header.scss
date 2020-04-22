@@ -1,4 +1,3 @@
-body {background-color: #000000;}
 header {
     background: #ffffff;
     & .wrapper {
@@ -72,6 +71,18 @@ header {
         padding: 84px 15px 30px 33px;
         background-color: #ffffff;
         transform: translateX(-50%);
+        & .interesting-menu {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-flow: column wrap;
+            margin: 0;
+            padding: 0;
+            width: 423px;
+            list-style: none;
+            max-height: 300px;
+            & li:not(:last-child) {margin: 0 5px 29px 0;}
+        }
         & a:hover {color: #06828a;}
         &::before {
             content: '';
@@ -139,14 +150,22 @@ header {
             transition: 0.3s ease;
             &:focus {border-bottom: 1px solid #06828a;}
         }
-        & button {
+        & .search-reset {
             width: 25px;
             min-width: 25px;
             height: 25px;
-            background: none;
-            border: none;
             outline: none;
             & img {width: 100%;}
         }
+    }
+    &.fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 7;
+        box-shadow: 0 0 15px lightgray;
+        .search-field,
+        .hidden-menu {box-shadow: 0 5px 4px rgba(0, 0, 0, 0.12);}
     }
 }
