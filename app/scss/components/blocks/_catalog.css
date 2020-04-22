@@ -1,0 +1,115 @@
+.catalog-list {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.catalog-list .catalog-link {
+  position: relative;
+  display: block;
+  width: 50%;
+  max-height: 347px;
+  overflow: hidden;
+}
+@media (max-width: 1910px) {
+  .catalog-list .catalog-link {
+    max-height: 310px;
+  }
+}
+@media (max-width: 1700px) {
+  .catalog-list .catalog-link {
+    max-height: 270px;
+  }
+}
+@media (max-width: 1480px) {
+  .catalog-list .catalog-link {
+    max-height: 235px;
+  }
+}
+@media (max-width: 1300px) {
+  .catalog-list .catalog-link {
+    max-height: 200px;
+  }
+}
+@media (max-width: 1100px) {
+  .catalog-list .catalog-link {
+    max-height: 175px;
+  }
+}
+@media (max-width: 955px) {
+  .catalog-list .catalog-link {
+    width: 100%;
+    max-height: 208px;
+  }
+}
+@media (max-width: 650px) {
+  .catalog-list .catalog-link {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-height: 209px;
+    min-height: 209px;
+  }
+}
+.catalog-list .catalog-link img {
+  width: 100%;
+}
+.catalog-list .catalog-link span {
+  position: absolute;
+  top: calc(50% - 18px);
+  left: 50%;
+  width: 100%;
+  padding: 0 10px;
+  font-family: "Circe-Bold";
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  transform: translateX(-50%);
+  color: #ffffff;
+}
+@media (max-width: 1300px) {
+  .catalog-list .catalog-link span {
+    top: calc(50% - 15px);
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+@media (max-width: 992px) {
+  .catalog-list .catalog-link span {
+    top: calc(50% - 11px);
+    font-size: 22px;
+    line-height: 22px;
+  }
+}
+.catalog-list .catalog-link span::before {
+  content: "";
+  position: absolute;
+  top: calc(100% + 20px);
+  left: calc(50% - 1.5px);
+  width: 46px;
+  height: 3px;
+  transform: translateX(-50%);
+  display: block;
+  background-color: #d6d6d6;
+  transition: 0.3s ease;
+}
+@media (max-width: 1300px) {
+  .catalog-list .catalog-link span::before {
+    top: calc(100% - 6px);
+    left: calc(50% - 1px);
+    width: 27px;
+    height: 2px;
+  }
+}
+.catalog-list .catalog-link:hover span::before {
+  left: calc(50% - 23px);
+  transform: rotate(90deg);
+}
+@media (max-width: 1300px) {
+  .catalog-list .catalog-link:hover span::before {
+    left: calc(50% - 13.5px);
+  }
+}

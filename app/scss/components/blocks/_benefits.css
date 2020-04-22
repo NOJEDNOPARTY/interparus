@@ -1,0 +1,101 @@
+.benefits-list-section {
+  padding: 112px 0 113px;
+  border-top: 1px solid #ebebeb;
+}
+@media (max-width: 1170px) {
+  .benefits-list-section {
+    padding: 96px 0 60px;
+  }
+}
+.benefits-list {
+  display: flex;
+  align-self: flex-start;
+  justify-content: space-between;
+}
+@media (max-width: 992px) {
+  .benefits-list {
+    flex-flow: row wrap;
+  }
+}
+.bnf {
+  display: flex;
+  align-self: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 380px;
+  padding-right: 13px;
+}
+@media (max-width: 992px) {
+  .bnf {
+    max-width: 50%;
+  }
+  .bnf:not(:last-child) {
+    padding-bottom: 41px;
+  }
+}
+@media (max-width: 600px) {
+  .bnf {
+    max-width: 100%;
+    padding-right: 0;
+  }
+}
+.bnf-img {
+  width: 52px;
+  min-width: 52px;
+  height: 49px;
+  margin-right: 22px;
+}
+@media (max-width: 1170px) {
+  .bnf-img {
+    margin-right: 5px;
+  }
+}
+@media (max-width: 600px) {
+  .bnf-img {
+    margin-right: 35px !important;
+  }
+}
+.bnf-img.bnf-img-2 {
+  margin-right: 6px;
+  margin-top: -11px;
+}
+.bnf-img.bnf-img-3 {
+  margin-right: 14px;
+  margin-top: -9px;
+}
+.bnf-img img {
+  max-width: 100%;
+}
+.bnf-cnt p {
+  font-family: "Gilroy-Regular";
+  font-size: 16px;
+  line-height: 21px;
+  color: #898989;
+}
+@media (max-width: 600px) {
+  .bnf-cnt p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+.bnf-name {
+  display: block;
+  margin-bottom: 7px;
+  font-family: "Circe-Bold";
+  font-size: 26px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #b5b5b5;
+  transition: 0.3s ease;
+}
+.bnf-name:hover {
+  color: #06828a;
+}
+@media (max-width: 600px) {
+  .bnf-name {
+    margin-bottom: 10px;
+    font-size: 21px;
+    line-height: 21px;
+  }
+}

@@ -28,6 +28,10 @@
     font-size: 39px;
     line-height: 39px;
   }
+  @media (max-width: 992px) {
+    font-size: 26px;
+    line-height: 26px;
+  }
 }
 .form-field {
   width: 100%;
@@ -46,6 +50,7 @@
   @media (max-width: 1100px) {
     max-width: 170px;
   }
+  @media (max-width: 650px) {max-width: 220px;}
   &.error {
     border: 1px solid red;
   }

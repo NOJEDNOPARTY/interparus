@@ -89,18 +89,17 @@ var common = {
 			margin:10,
 			responsive:{
 				0:{
-					items:1,
-					nav:true
-				},
-				600:{
 					items:2,
-					nav:false,
-					dots: false
+					margin:0,
+				},
+				601:{
+					items:3,
+				},
+				993:{
+					items:2,
 				},
 				1101:{
 					items:3,
-					nav:false,
-					dots: false
 				}
 			}
 		})

@@ -1,13 +1,14 @@
 .benefits-list-section {
     padding: 112px 0 113px;
     border-top: 1px solid #ebebeb;
-    @media (max-width: 1170px) {padding: 60px 0;}
+    @media (max-width: 1170px) {padding: 96px 0 60px;}
 }
 
 .benefits-list {
     display: flex;
     align-self: flex-start;
     justify-content: space-between;
+    @media (max-width: 992px) {flex-flow: row wrap;}
 }
 
 .bnf {
@@ -17,12 +18,21 @@
     width: 100%;
     max-width: 380px;
     padding-right: 13px;
+    @media (max-width: 992px) {
+        max-width: 50%;
+        &:not(:last-child) {padding-bottom: 41px;}
+    }
+    @media (max-width: 600px) {
+        max-width: 100%; 
+        padding-right: 0;
+    }
     &-img {
         width: 52px;
         min-width: 52px;
         height: 49px;
         margin-right: 22px;
         @media (max-width: 1170px) { margin-right: 5px;}
+        @media (max-width: 600px) { margin-right: 35px !important;}
         &.bnf-img-2 {
             margin-right: 6px;
             margin-top: -11px;
@@ -39,6 +49,11 @@
             font-size: 16px;
             line-height: 21px;
             color: #898989;
+            @media (max-width: 600px) {
+                margin-bottom: 10px;
+                font-size: 14px;
+                line-height: 18px;
+            }
         }
     }
     &-name {
@@ -51,5 +66,10 @@
         color: #b5b5b5;
         transition: 0.3s ease;
         &:hover {color: #06828a;}
+        @media (max-width: 600px) {
+            margin-bottom: 10px;
+            font-size: 21px;
+            line-height: 21px;
+        }
     }
 }

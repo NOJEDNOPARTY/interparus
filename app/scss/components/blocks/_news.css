@@ -3,7 +3,12 @@
 }
 @media (max-width: 1250px) {
   .news-list-section {
-    padding: 63px 0;
+    padding: 75px 0 53px;
+  }
+}
+@media (max-width: 915px) {
+  .news-list-section {
+    overflow-x: hidden;
   }
 }
 .news-list-section .title {
@@ -11,13 +16,23 @@
 }
 @media (max-width: 1250px) {
   .news-list-section .title {
-    margin-bottom: 60px;
+    margin-bottom: 46px;
   }
 }
 .news-list {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+}
+@media (max-width: 915px) {
+  .news-list.news-list-slider {
+    min-width: 875px;
+  }
+}
+@media (max-width: 600px) {
+  .news-list.news-list-slider {
+    min-width: 560px;
+  }
 }
 .news-list-item {
   width: 100%;
@@ -42,6 +57,17 @@
     max-width: 445px;
   }
 }
+@media (max-width: 992px) {
+  .news-list-item {
+    max-width: 262px;
+  }
+}
+@media (max-width: 650px) {
+  .news-list-item {
+    margin: 9px;
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.18);
+  }
+}
 .news-list-item:hover {
   box-shadow: none;
 }
@@ -53,6 +79,11 @@
   max-height: 387px;
   overflow: hidden;
 }
+@media (max-width: 992px) {
+  .news-list-item-img {
+    max-height: 218px;
+  }
+}
 .news-list-item-img img {
   width: 100%;
 }
@@ -62,7 +93,7 @@
 }
 @media (max-width: 1300px) {
   .news-list-item-cnt {
-    padding: 15px 15px 25px 15px;
+    padding: 15px 15px 17px 11px;
   }
 }
 .news-list-item-cnt p {
@@ -77,12 +108,27 @@
   line-height: 22px;
   color: #898989;
 }
+@media (max-width: 992px) {
+  .news-list-item-cnt p {
+    height: 85px;
+    font-size: 13px;
+    line-height: 17px;
+    -webkit-line-clamp: 5;
+  }
+}
 .news-list-item-date {
   margin-bottom: 15px;
   font-family: "Gilroy-Extrabold";
   font-size: 16px;
   line-height: 16px;
   color: #d1d1d1;
+}
+@media (max-width: 992px) {
+  .news-list-item-date {
+    margin-bottom: 8px;
+    font-size: 12px;
+    line-height: 12px;
+  }
 }
 .news-list-item-title {
   margin-bottom: 10px;
@@ -95,6 +141,14 @@
   -webkit-line-clamp: 2;
   overflow: hidden;
   color: #06828a;
+}
+@media (max-width: 992px) {
+  .news-list-item-title {
+    margin-bottom: 6px;
+    font-size: 13px;
+    line-height: 17px;
+    height: 34px;
+  }
 }
 .news-list-item-more {
   font-family: "Futura PT Book";
@@ -111,12 +165,29 @@
 }
 @media (max-width: 1100px) {
   .article-list-section {
-    padding: 85px 0;
+    padding: 100px 0 111px;
   }
 }
 .article-list {
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 992px) {
+  .article-list {
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+}
+.news-link-more {
+  display: none;
+}
+@media (max-width: 767px) {
+  .news-link-more {
+    display: block;
+    width: 64px;
+    height: 42px;
+    margin: 24px auto 0;
+  }
 }
 .article-list-item {
   position: relative;
@@ -138,6 +209,14 @@
     max-width: 460px;
   }
 }
+@media (max-width: 992px) {
+  .article-list-item {
+    max-width: 322px;
+  }
+  .article-list-item:not(:last-child) {
+    margin-bottom: 33px;
+  }
+}
 .article-list-item::before {
   content: "";
   position: absolute;
@@ -150,6 +229,13 @@
   height: calc(100% + 18px);
   border: 1px solid #ebebeb;
 }
+@media (max-width: 992px) {
+  .article-list-item::before {
+    top: -8px;
+    width: calc(100% - 12px);
+    height: calc(100% + 8px);
+  }
+}
 .article-list-item-img {
   position: relative;
   z-index: 1;
@@ -159,6 +245,11 @@
   width: 100%;
   max-height: 320px;
   overflow: hidden;
+}
+@media (max-width: 992px) {
+  .article-list-item-img {
+    max-height: 155px;
+  }
 }
 .article-list-item-img img,
 .article-list-item-img video {
@@ -176,6 +267,11 @@
     padding: 30px;
   }
 }
+@media (max-width: 992px) {
+  .article-list-item-cnt {
+    padding: 31px 20px 27px 14px;
+  }
+}
 .article-list-item-cnt p {
   margin-bottom: 20px;
   height: 132px;
@@ -189,6 +285,15 @@
   line-height: 22px;
   color: #898989;
 }
+@media (max-width: 992px) {
+  .article-list-item-cnt p {
+    margin-bottom: 16px;
+    height: 162px;
+    font-size: 14px;
+    line-height: 18px;
+    -webkit-line-clamp: 9;
+  }
+}
 .article-list-item-title {
   margin-bottom: 16px;
   font-family: "Circe-Light";
@@ -201,6 +306,14 @@
   -webkit-line-clamp: 1;
   overflow: hidden;
   color: #06828a;
+}
+@media (max-width: 992px) {
+  .article-list-item-title {
+    margin-bottom: 14px;
+    height: 26px;
+    font-size: 21px;
+    line-height: 26px;
+  }
 }
 .article-list-item-more {
   position: relative;
