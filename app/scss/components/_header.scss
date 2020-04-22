@@ -13,6 +13,10 @@ header {
         width: 100%;
         max-width: 178px;
         margin-right: 43px;
+        @media (max-width: 1170px) {
+            max-width: 145px;
+            margin-right: 0;
+        }
         & img {width: 100%;}
     }
     & .menu,
@@ -25,7 +29,7 @@ header {
         list-style: none;
         & li {
             position: relative;
-            &:not(:last-child) {margin: 0 33px 0 0;}
+            &:not(:last-child) {margin: 0 15px 0 0;}
             & > span,
             & > a {
                 cursor: pointer;
@@ -37,6 +41,10 @@ header {
                 line-height: 16px;
                 color: #5b5b5b;
                 transition: 0.3s ease;
+                @media (max-width: 1170px) {
+                    font-size: 14px;
+                    line-height: 14px;
+                }
                 & svg {
                     width: 8px;
                     height: 4px;
@@ -71,6 +79,9 @@ header {
         padding: 84px 15px 30px 33px;
         background-color: #ffffff;
         transform: translateX(-50%);
+        @media (max-width: 1170px) {
+            padding: 60px 15px 30px 15px;
+        }
         & .interesting-menu {
             display: flex;
             align-items: flex-start;

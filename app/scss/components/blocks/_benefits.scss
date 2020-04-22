@@ -1,6 +1,7 @@
 .benefits-list-section {
     padding: 112px 0 113px;
     border-top: 1px solid #ebebeb;
+    @media (max-width: 1170px) {padding: 60px 0;}
 }
 
 .benefits-list {
@@ -15,11 +16,13 @@
     justify-content: flex-start;
     width: 100%;
     max-width: 380px;
+    padding-right: 13px;
     &-img {
         width: 52px;
         min-width: 52px;
         height: 49px;
         margin-right: 22px;
+        @media (max-width: 1170px) { margin-right: 5px;}
         &.bnf-img-2 {
             margin-right: 6px;
             margin-top: -11px;

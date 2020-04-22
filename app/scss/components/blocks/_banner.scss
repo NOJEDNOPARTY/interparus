@@ -2,12 +2,13 @@
 .banner {
     position: relative;
     &-cnt {
-        position: absolute;
-        z-index: 2;
-        top: 0;
-        left: 0;
-        width: 100%;
-        padding: 210px 0 0;
+        &-titles {
+            position: absolute;
+            z-index: 2;
+            top: 34%;
+            left: 50%;
+            transform: translate(-50%);
+        }
     }
     &::before {
         content: '';
@@ -21,6 +22,9 @@
         display: block;
         background-color: #d6d6d6;
         transition: 0.3s ease;
+        @media (max-width: 1250px) {
+            height: 60px;
+        }
     }
 }
 
@@ -32,6 +36,10 @@
         line-height: 121px;
         text-transform: uppercase;
         color: #ffffff;
+        @media (max-width: 1250px) {
+            font-size: 90px;
+            line-height: 90px;
+        }
     }
     & p {
         font-family: 'Circe-Light';
@@ -40,6 +48,10 @@
         line-height: 47px;
         text-transform: uppercase;
         color: #ffffff;
+        @media (max-width: 1250px) {
+            font-size: 38px;
+            line-height: 38px;
+        }
     }
 }
 
@@ -47,11 +59,20 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: absolute;
+    z-index: 2;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%);
     & p {
         font-family: 'Circe-Bold';
         font-size: 32px;
         line-height: 23px;
         text-transform: uppercase;
         color: #ffffff;
+        @media (max-width: 1250px) {
+            font-size: 23px;
+            line-height: 18px;
+        }
     }
 }

@@ -1,6 +1,10 @@
 .news-list-section {
     padding: 163px 0 114px;
-    & .title {margin-bottom: 118px;}
+    @media (max-width: 1250px) {padding: 63px 0;}
+    & .title {
+        margin-bottom: 118px;
+        @media (max-width: 1250px) {margin-bottom: 60px;}
+    }
 }
 
 .news-list {
@@ -16,6 +20,9 @@
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.18);
     background-color: #ffffff;
     transition: 0.3s ease;
+    @media (max-width: 1500px) {max-width: 400px;}
+    @media (max-width: 1300px) {max-width: 320px;}
+    @media (max-width: 1100px) {max-width: 445px;}
     &:hover {box-shadow: none;}
     &-img {
         display: flex;
@@ -29,6 +36,7 @@
     &-cnt {
         padding: 18px 36px 34px 20px;
         border: 1px solid #ebebeb;
+        @media (max-width: 1300px) {padding: 15px 15px 25px 15px;}
         & p {
             height: 66px;
             overflow: hidden;
@@ -71,7 +79,10 @@
     }
 }
 
-.article-list-section {padding: 157px 0 127px;}
+.article-list-section {
+    padding: 157px 0 127px;
+    @media (max-width: 1100px) {padding: 85px 0;}
+}
 
 .article-list {
     display: flex;
@@ -82,6 +93,9 @@
     position: relative;
     width: 100%;
     max-width: 665px;
+    @media (max-width: 1380px) {max-width: 550px;}
+    @media (max-width: 1170px) {max-width: 490px;}
+    @media (max-width: 1100px) {max-width: 460px;}
     &::before {
         content: '';
         position: absolute;
@@ -103,7 +117,8 @@
         width: 100%;
         max-height: 320px;
         overflow: hidden;
-        & img {width: 100%;}
+        & img,
+        & video {width: 100%;}
     }
     &-cnt {
         position: relative;
@@ -111,6 +126,7 @@
         padding: 38px 54px 29px 54px;
         width: calc(100% - 25px);
         margin: 0 auto;
+        @media (max-width: 1250px) {padding: 30px;}
         & p {
             margin-bottom: 20px;
             height: 132px;
