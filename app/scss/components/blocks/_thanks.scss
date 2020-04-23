@@ -1,0 +1,52 @@
+.thanks-section {
+    height: 100%;
+    padding: 268px 0 242px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media (max-width: 1300px) {padding: 100px 0;}
+    .wrapper {max-width: 1170px;}
+    h1 {
+        margin-bottom: 6px;
+        font-family: 'Circe-Bold';
+        font-size: 64px;
+        line-height: 64px;
+        text-transform: uppercase;
+        color: #ffffff;
+        @media (max-width: 992px) {
+            font-size: 48px;
+            line-height: 48px;
+        }
+        @media (max-width:600px) {
+            font-size: 24px;
+            line-height: 24px;
+            text-align: center;
+        }
+    }
+    p {       
+        padding-left: 165px; 
+        font-family: 'Gilroy-Bold';
+        font-size: 32px;
+        line-height: 23px;
+        color: #ffffff;
+        @media (max-width: 992px) {
+            padding-left: 105px;
+            font-size: 24px;
+            line-height: 24px;
+        }
+        @media (max-width: 600px) {
+            padding-left: 0px;
+            font-size: 16px;
+            line-height: 16px;
+            text-align: center;
+        }
+        span {
+            font-size: 21px;
+            line-height: 21px;
+            @media (max-width: 992px) {
+                font-size: 14px;
+                line-height: 14px;
+            }
+        }
+    }
+}

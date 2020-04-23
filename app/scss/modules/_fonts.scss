@@ -60,6 +60,25 @@
 // Gilroy
 
 @font-face {
+    font-family: 'Gilroy-Light';
+    src: url('../css/fonts/gilroy/Gilroy-Light.woff2') format('woff2'),
+        url('../css/fonts/gilroy/Gilroy-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: url('../css/fonts/gilroy/Gilroy-Medium.woff2') format('woff2'),
+        url('../css/fonts/gilroy/Gilroy-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+
+
+@font-face {
     font-family: 'Gilroy-Extrabold';
     src: url('../css/fonts/gilroy/Gilroy-Extrabold.woff2') format('woff2'),
         url('../css/fonts/gilroy/Gilroy-Extrabold.woff') format('woff');
@@ -83,6 +102,16 @@
     font-weight: 600;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url('../css/fonts/gilroy/Gilroy-Bold.woff2') format('woff2'),
+        url('../css/fonts/gilroy/Gilroy-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
 
 // Futura PT Book
 
