@@ -6,8 +6,9 @@ header {
         @media (max-width: 992px) {padding: 0 46px 0 22px;}
     }
     & .logo {
+        display: block;
         width: 100%;
-        max-width: 178px;
+        max-width: 176px;
         margin-right: 43px;
         @media (max-width: 1170px) {
             max-width: 145px;
@@ -25,7 +26,7 @@ header {
         list-style: none;
         & li {
             position: relative;
-            &:not(:last-child) {margin: 0 15px 0 0;}
+            &:not(:last-child) {margin: 0 33px 0 0;}
             & > span,
             & > a {
                 cursor: pointer;
@@ -198,7 +199,9 @@ header {
         max-width: 930px;
         padding: 14px 33px 25px 47px;
         background-color: #ffffff;
+        & .search-container {display: none;}
         @media (max-width: 992px) {
+            & .search-container {display: flex;}
             position: static;
             display: block;
             padding: 0 42px 31px 42px;
@@ -287,7 +290,7 @@ header {
             flex-direction: column;
             justify-content: flex-start;
             align-items: flex-start;
-            padding: 0 0 30px;
+            padding: 0 0 90px;
             // transform: translateX(120%);
             & .menu {
                 flex-direction: column;

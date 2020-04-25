@@ -443,8 +443,9 @@ header {
       header .wrapper {
         padding: 0 46px 0 22px; } }
   header .logo {
+    display: block;
     width: 100%;
-    max-width: 178px;
+    max-width: 176px;
     margin-right: 43px; }
     @media (max-width: 1170px) {
       header .logo {
@@ -465,7 +466,7 @@ header {
       position: relative; }
       header .menu li:not(:last-child),
       header .hidden-menu li:not(:last-child) {
-        margin: 0 15px 0 0; }
+        margin: 0 33px 0 0; }
       header .menu li > span,
       header .menu li > a,
       header .hidden-menu li > span,
@@ -654,11 +655,15 @@ header {
     max-width: 930px;
     padding: 14px 33px 25px 47px;
     background-color: #ffffff; }
+    header .search-field .search-container {
+      display: none; }
     @media (max-width: 992px) {
       header .search-field {
         position: static;
         display: block;
         padding: 0 42px 31px 42px; }
+        header .search-field .search-container {
+          display: flex; }
         header .search-field .search-row,
         header .search-field .search-reset {
           display: none; }
@@ -740,7 +745,7 @@ header {
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        padding: 0 0 30px; }
+        padding: 0 0 90px; }
         header .header-menu .menu {
           flex-direction: column;
           align-items: flex-start;

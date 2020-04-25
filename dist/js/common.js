@@ -29,6 +29,7 @@ var common = {
 			$(".menu .menu-level-trigger").hover(function(){
 				$(this).closest('li').addClass('open');
 				$(this).closest('li').find('.hidden-menu').slideDown('fast');
+				$('.search-field').slideUp("fast");
 			},function(){
 				$(this).closest('li').removeClass('open');
 				$(this).closest('li').find('.hidden-menu').slideUp('fast');
@@ -39,6 +40,7 @@ var common = {
 				$(this).closest('li').toggleClass('open');
 				$('header').toggleClass('step-two');
 				$(this).closest('li').find('.hidden-menu').toggle();
+				$('.search-field').slideUp("fast");
 			});
 		}
 
@@ -85,7 +87,9 @@ var common = {
 			smartSpeed: 2000,
 			animateOut: 'fadeOut',
 			animateIn: 'fadeIn',
-			autoplay: true
+			autoplay: true,
+			autoplayTimeout:5000,
+			autoplayHoverPause:false
 		})
 
 		$('.news-list-slider').owlCarousel({
