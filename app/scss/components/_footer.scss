@@ -114,7 +114,7 @@ footer {
     & input {
         width: 100%;
         height: 30px;
-        padding: 0 28px 12px 11px;
+        padding: 0 28px 2px 8px;
         background: none;
         border: none;
         outline: none;
@@ -223,6 +223,8 @@ footer {
     justify-content: flex-start;
     padding-top: 3px;
     & a {
+        padding-bottom: 0;
+        border: none !important;
         &:not(:last-child) {margin-right: 10px;}
         &:first-child{
             @media (max-width: 650px) {display: none;}

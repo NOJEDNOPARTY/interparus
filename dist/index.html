@@ -65,7 +65,7 @@
                                     <p class="hidden-menu-title">Однокорпусные яхты</p>
                                     <a href="#" class="close-hidden-menu">назад</a>
                                 </li>
-                                <li><a href="#">Allures Yachting</a></li>
+                                <li><a href="catalog.html">Allures Yachting</a></li>
                                 <li><a href="#">Garcia Yachts</a></li>
                                 <li><a href="#">Dufour Yachts</a></li>
                                 <li><a href="#">RM Yachts</a></li>
@@ -154,9 +154,18 @@
     <div class="main">
         <div class="banner main-banner">
             <div class="banner-slider owl-carousel">
-                <img src="./images/banner-img-1.jpg" alt="banner">
-                <img src="./images/banner-img-1.jpg" alt="banner">
-                <img src="./images/banner-img-1.jpg" alt="banner">
+                <div class="banner-slider-item">
+                    <img src="./images/banner-img-1.jpg" alt="banner">
+                    <p>Продажа  яхт</p>
+                </div>
+                <div class="banner-slider-item">
+                    <img src="./images/banner-img-1.jpg" alt="banner">
+                    <p>круизы на яхтах</p>
+                </div>
+                <div class="banner-slider-item">
+                    <img src="./images/banner-img-1.jpg" alt="banner">
+                    <p>Парусная школа</p>
+                </div>
             </div>
             <div class="banner-cnt">
                 <div class="wrapper wrapper-s banner-cnt-titles">
@@ -234,7 +243,7 @@
                     </div>
                     <div class="article-list-item">
                         <a href="" class="article-list-item-img">
-                            <video class="video-item" loop="loop" muted poster="./images/article-list-item-img-2.jpg" preload="none">
+                            <video class="video-item" loop="loop" playsinline muted poster="./images/article-list-item-img-2.jpg" preload="none">
                                 <source src="./docs/video/video.mp4" type="video/mp4" /> 
                             </video>
                         </a>
@@ -337,6 +346,38 @@
             </div>
         </div>
     </footer>
+        <div id="subscribePopup" class="popup-wrapper">
+            <div class="popup-layout">
+                <div class="popup">
+                    <div class="popup-img"><img src="./images/popup-img.jpg" alt="popup-img"></div>
+                    <div class="popup-cnt">
+                        <form action="">
+                            <div class="popup-title">Подпишись на самые  яхтенные новости!</div>
+                            <div class="popup-subtitle">Приобщайся к нашему яхтенному сообществу.  Новинки яхтинга раз в две недели.</div>
+                            <input type="text" placeholder="Имя" class="form-field">
+                            <input type="email" placeholder="E-mail " class="form-field">
+                            <button  class="btn btn-transparent btn-transparent-red btn-thanks-link btn-red-sub" type="submit"><span>Подписаться </span></button>
+                        </form>
+                    </div>
+                    <div class="popup-close"><img src="./images/reset.svg" alt=""></div>
+                </div>
+            </div>
+        </div>
+    
+        <div id="submitPopup" class="popup-wrapper">
+            <div class="popup-layout">
+                <div class="popup">
+                    <div class="popup-title">Подтверждение действия</div>
+                    <form action="#">
+                        <div class="recapthca">
+                            <img src="./images/rec.jpg" alt="">
+                        </div>
+                        <button  class="btn btn-transparent btn-transparent-red btn-thanks-link" type="submit"><span>Отправить</span></button>
+                    </form>
+                    <div class="popup-close"><img src="./images/reset.svg" alt=""></div>
+                </div>
+            </div>
+        </div>
     
     <!--Libs-->
     <script src="js/jquery-3.5.0.min.js"></script>

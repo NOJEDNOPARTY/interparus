@@ -23,7 +23,7 @@ var common = {
 	},
 	main: function(){
 
-
+		$('.phone-mask').mask("+380 (99) 999-99-99");
 
 		if($(window).width() > 1024) {
 			$(".menu .menu-level-trigger").hover(function(){
@@ -74,6 +74,12 @@ var common = {
 	
 		var bLazy = new Blazy({});
 
+		$('.popup-close').click(function(event){
+			event.preventDefault();
+			$('body').removeClass('hidden');
+			$('.popup-wrapper').removeClass('active');
+		});
+
 	},
 	
 	carousel: function(){
@@ -117,7 +123,6 @@ var common = {
 		var $window = $(window);
 		if($video.length){
 			$window.scroll(function() {
-
 				$video.each(function(){
 					var $thisItem = $(this)
 					var $topOfVideo = $thisItem.offset().top;
@@ -141,7 +146,7 @@ var common = {
 	submit: function(){
 		$("form").submit(function(event){
 			event.preventDefault();
-			formField = $(this).find(".form-field")
+			formField = $(this).find(".form-field, .form-line")
 			
 			formField.each(function(){
 				var thisEl = $(this);
@@ -155,11 +160,16 @@ var common = {
 			});	
 			if(formField.hasClass('form-error') == false){
 				$('.popup-wrapper').removeClass('active');
-				$('#thanksPopup').addClass('active')
+				$('#submitPopup').addClass('active')
 				var bLazy = new Blazy({});
 			}
 		});
 
+		$('.btn-thanks-link').click(function(event){
+			event.preventDefault();
+			$('body').removeClass('hidden');
+			document.location.href = "./thanks.html";
+		});
 	}
 };
 

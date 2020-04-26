@@ -139,6 +139,11 @@ table {
 	border-spacing: 0;
 }
 
+input {
+	-webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 input[type=button],
 input[type=submit],
 button {

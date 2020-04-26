@@ -1,0 +1,182 @@
+.contact {
+    padding: 154px 0 112px;
+    @media (max-width: 1100px) {padding:50px 0;}
+    &-info {
+        &-row {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            width: 100%;
+            @media (max-width: 992px) {
+                flex-flow: row wrap;
+                justify-content: center;
+            }
+            &:not(:last-child) {
+                margin-bottom: 45px;
+                @media (max-width: 992px) {margin-bottom: 0;}
+            }
+            &-2 {align-items: center;}
+        }
+    }
+    & .link-block {
+        &-title {
+            margin-bottom: 0;
+            font-family: 'Circe-Regular';
+            font-size: 21px;
+            line-height: 26px;
+            text-transform: uppercase;
+            color: #393939;
+            @media (max-width: 992px) {text-align: center;}
+        }
+        & p,
+        & a {
+            font-family: 'Circe-Light';
+            font-size: 16px;
+            line-height: 25px;
+            letter-spacing: 0.7px;
+            color: #393939;
+        }
+        &-social {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;   
+            margin-top: 10px;
+            @media (max-width: 450px) {align-items: flex-start;} 
+            & .link-block-title {
+                line-height: 21px;
+                margin-right: 15px;
+            }
+            & a {
+                &:not(:last-child) {margin-right: 13px;}
+                & img {
+                    &.whatsapp {width: 30px;}
+                    &.facebook {width: 28px;}
+                    &.instagram {width: 28px;}
+                    &.youtube {width: 38px;}
+                    &.twitter {width: 35px;}
+                    &.pintarest {width: 29px;}
+                }
+            }
+        }
+    }
+    &-form {
+        padding-bottom: 274px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-size: center;
+        @media (max-width: 1100px) {padding-bottom: 90px;}
+        & form {
+            width: 100%;
+        }
+        &-title {
+            margin-bottom: 65px;
+            font-family: 'Circe-Bold';
+            font-size: 149px;
+            line-height: 125px;
+            text-transform: uppercase;
+            color: #ffffff;
+            @media (max-width: 992px) {
+                margin-bottom: 40px;
+                font-size: 80px;
+                line-height: 67px;
+            }
+            @media (max-width: 500px) {
+                margin-bottom: 30px;
+                font-size:  40px;
+                line-height: 27px;
+            }
+            & span {
+                display: block;
+                font-size: 60px;
+                line-height: 72px;
+                @media (max-width: 992px) {
+                    font-size: 40px;
+                    line-height: 50px;
+                }
+                @media (max-width: 992px) {
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+}
+
+.form-line {
+    display: block;
+    width: 100%;
+    max-width: 488px;
+    margin-bottom: 18px;
+    height: 37px;
+    padding: 9px 5px 10px 15px;
+    font-family: 'Gilroy-Regular';
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: uppercase;
+    background: none;
+    outline: none;
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+    &.error {border-bottom: 1px solid red;}
+    @media (max-width: 500px) {
+        font-size: 14px;
+        line-height: 14px;
+    }
+    &:-ms-input-placeholder {
+        color: #ffffff;
+    }
+    &::-webkit-input-placeholder{
+        color: #ffffff;
+    }
+    &:-moz-placeholder,
+    &::-moz-placeholder {
+        color: #ffffff;
+    }
+}
+
+.btn-transparent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 488px;
+    height: 46px;
+    font-family: 'Gilroy-Regular';
+    font-size: 18px;
+    line-height: 46px;
+    text-transform: uppercase;
+    background: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    transition: 0.3s ease;
+    &:hover {
+        background: #ffffff;
+        color: #06828a;
+    }
+    & span {
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        &::before {
+            content: '';
+            position: absolute;
+            top: calc(50% - 0.5px);
+            right: -40px;
+            display: block;
+            width: 31px;
+            height: 1px;
+            background-color: #ffffff;
+        }
+    }
+    &-red {
+        color: #7d2a40;
+        border: 1px solid #7d2a40;
+        & span {
+            &::before {background-color: #7d2a40;}
+        }
+        &:hover {
+            background: #7d2a40;
+            color: #ffffff;
+        }
+    }
+}

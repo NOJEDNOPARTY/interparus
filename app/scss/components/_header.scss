@@ -28,7 +28,7 @@ header {
             position: relative;
             &:not(:last-child) {
                 margin: 0 33px 0 0;
-                @media (max-width: 170px){
+                @media (max-width: 1170px){
                     margin: 0 15px 0 0;
                 }
             }
@@ -218,11 +218,23 @@ header {
                 max-width: 207px;
                 margin: 0 auto;
                 & input {
-                    padding: 0 6px 7px;
-                    height: auto;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    padding: 0 28px 0 8px;
+                    height: 17px;
+                    margin-bottom: 6px;
                     font-size: 14px;
                     line-height: 14px;
+                    vertical-align: middle;
                     border-bottom: none;
+                    border-radius: 0 !important;
+                    // &::-webkit-input-placeholder,
+                    // &::-moz-placeholder,
+                    // &:-moz-placeholder,
+                    // &:-ms-input-placeholder {
+                    //     line-height: 12px;
+                    // }
                 }
             }
         }
@@ -247,7 +259,6 @@ header {
             color: #939393;
             border-bottom: 1px solid #ebebeb;
             transition: 0.3s ease;
-            &:focus {border-bottom: 1px solid #06828a;}
         }
         & .search-reset {
             width: 25px;

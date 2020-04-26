@@ -55,14 +55,17 @@ body, html {
   }
 }
 .form-field {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   width: 100%;
   max-width: 208px;
   height: 35px;
-  padding: 0 13px;
+  padding: 10px 13px 8px;
   background-color: none;
   font-family: "Century Gothic Regular";
   font-size: 16px;
-  line-height: 16px;
+  line-height: 18px;
   color: #939393;
   background: none;
   border: 1px solid #c2c0b3;
@@ -70,8 +73,8 @@ body, html {
 
   &:not(textarea) {
     resize: none;
-  white-space: nowrap;
-  overflow-x: scroll;
+    white-space: nowrap;
+    overflow-x: hidden;
   }
   
   @media (max-width: 1100px) {
