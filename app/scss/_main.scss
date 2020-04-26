@@ -67,6 +67,12 @@ body, html {
   background: none;
   border: 1px solid #c2c0b3;
   transition: 0.3s ease;
+
+  &:not(textarea) {
+    resize: none;
+  white-space: nowrap;
+  overflow-x: scroll;
+  }
   
   @media (max-width: 1100px) {
     max-width: 170px;

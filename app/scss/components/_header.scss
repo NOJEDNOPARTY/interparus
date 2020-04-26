@@ -26,7 +26,12 @@ header {
         list-style: none;
         & li {
             position: relative;
-            &:not(:last-child) {margin: 0 33px 0 0;}
+            &:not(:last-child) {
+                margin: 0 33px 0 0;
+                @media (max-width: 170px){
+                    margin: 0 15px 0 0;
+                }
+            }
             & > span,
             & > a {
                 cursor: pointer;

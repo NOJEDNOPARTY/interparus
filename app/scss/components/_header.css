@@ -41,6 +41,12 @@ header .menu li:not(:last-child),
 header .hidden-menu li:not(:last-child) {
   margin: 0 33px 0 0;
 }
+@media (max-width: 170px) {
+  header .menu li:not(:last-child),
+  header .hidden-menu li:not(:last-child) {
+    margin: 0 15px 0 0;
+  }
+}
 header .menu li > span,
 header .menu li > a,
 header .hidden-menu li > span,
