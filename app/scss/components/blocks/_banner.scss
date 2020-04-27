@@ -80,6 +80,7 @@
         font-family: 'Circe-ExtraLight';
         font-size: 114px;
         line-height: 121px;
+        font-weight: 100;
         text-transform: uppercase;
         color: #ffffff;
         @media (max-width: 1250px) {
@@ -142,8 +143,13 @@
             &.smaller {
                 font-size: 32px;
                 line-height: 44px;
+                @media (max-width: 992px) {
+                    font-size: 21px;
+                    line-height: 24px;
+                }
             }
             @media (max-width: 767px) {
+                font-family: 'Circe-Bold';
                 font-size: 24px;
                 line-height: 24px;
             }
