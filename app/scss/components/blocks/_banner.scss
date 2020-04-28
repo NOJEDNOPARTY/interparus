@@ -18,7 +18,7 @@
             img {
                 height: 377px;
                 width: auto !important;
-                margin: 0 auto;
+                margin: 0 0 0 -180px;
             }
         }
     }
@@ -26,6 +26,13 @@
         &-item {
             position: relative;
             width: 100%;
+            @media (max-width: 767px){
+                display: flex;
+                justify-content: center;
+                position: relative;
+                width: 100%;
+                overflow: hidden;
+            }
             & p {
                 position: absolute;
                 z-index: 2;
@@ -63,7 +70,7 @@
         z-index: 2;
         top: calc(100% - 4px);
         left: calc(50% - 0.5px);
-        width: 1px;
+        width: 0.2px;
         height: 155px;
         transform: translateX(-50%);
         display: block;

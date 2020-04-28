@@ -1,16 +1,21 @@
 body, html {
   height: 100%;
-	display: flex;
-	flex-direction: column;
-    min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   &.hidden {
     display: block;
     position: relative;
     min-height: 100vh;
     -webkit-overflow-scrolling: touch;
     overflow: hidden;
+    @media (min-width: 1050px) {
+      padding-right: 17px;
+      & header {padding-right: 17px;}
+    }
   }
 }
+
 
 .main {
   flex: 1 0 auto;
@@ -116,11 +121,5 @@ body, html {
     background-color: #c2c0b3;
     transition: 0.3s ease;
   }
-  &:hover {
-    border: 1px solid #ffffff;
-    color: #ffffff;
-  }
-  &:hover::before {
-    background-color: #ffffff;
-  }
+  &:hover::before { width: calc(100% - 50px);}
 }

@@ -149,10 +149,6 @@
     color: #ffffff;
     border: 1px solid #ffffff;
     transition: 0.3s ease;
-    &:hover {
-        background: #ffffff;
-        color: #06828a;
-    }
     & span {
         position: relative;
         display: inline-block;
@@ -166,17 +162,16 @@
             width: 31px;
             height: 1px;
             background-color: #ffffff;
+            transition: 0.3s ease;
         }
     }
+    &:hover span::before { width: calc(100% + 80px);}
     &-red {
         color: #7d2a40;
         border: 1px solid #7d2a40;
-        & span {
-            &::before {background-color: #7d2a40;}
-        }
-        &:hover {
-            background: #7d2a40;
-            color: #ffffff;
-        }
+        & span {&::before {background-color: #7d2a40;}}
+        &:hover span::before { width: calc(100% + 80px);}
     }
 }
+
+

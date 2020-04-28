@@ -66,14 +66,24 @@ var common = {
 		galleryList.each(function(item){
 			var galleryListItem = $(this).find('a').length
 			var itemLink = $(this).find('a');
-			itemLink.each(function(index){
-				var itemB = $(this).find('span');
-				if(index == 5) {
-					itemB.css('opacity', '1')
-					itemB.find('img').remove();
-					itemB.text('+' + (galleryListItem - 6))
-				}
-			})
+			if(galleryListItem > 6) {
+				itemLink.each(function(index){
+					var itemB = $(this).find('span');
+					if($(window).width() > 550) {
+						if(index == 5) {
+							itemB.css('opacity', '1')
+							itemB.find('img').remove();
+							itemB.text('+' + (galleryListItem - 6))
+						}
+					}else {
+						if(index == 3) {
+							itemB.css('opacity', '1')
+							itemB.find('img').remove();
+							itemB.text('+' + (galleryListItem - 4))
+						}
+					}
+				})
+			}
 		});
 
 		new WOW().init();
@@ -131,14 +141,14 @@ var common = {
 
 		$('.popup-close').click(function(event){
 			event.preventDefault();
+			$('.popup-wrapper').hide();
 			$('body').removeClass('hidden');
-			$('.popup-wrapper').hide('fast');
 		});
 
-		// setTimeout(function(){
-		// 	$('#subscribePopup').show('fast');
-		// 	$('body').addClass('hidden');
-		// }, 10000)
+		setTimeout(function(){
+			$('#subscribePopup').show('fast');
+			$('body').addClass('hidden');
+		}, 50000)
 
 	},
 	
