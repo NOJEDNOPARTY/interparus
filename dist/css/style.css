@@ -452,7 +452,7 @@ body, html {
     background-color: #c2c0b3;
     transition: 0.3s ease; }
   .form-btn:hover::before {
-    width: calc(100% - 50px); }
+    width: calc(100% - 68px); }
 
 header {
   background: #ffffff; }
@@ -995,13 +995,17 @@ header {
         line-height: 24px; } }
   @media (max-width: 767px) {
     .banner-page .head-title h1 {
-      font-family: 'Circe-Bold';
-      font-size: 24px;
-      line-height: 24px; } }
+      font-family: 'Circe-ExtraLight';
+      font-size: 30px;
+      line-height: 30px; } }
 
 .banner-page .banner-cnt-titles {
   top: auto;
   bottom: 79px; }
+  @media (max-width: 1024px) {
+    .banner-page .banner-cnt-titles {
+      top: auto;
+      bottom: 22px; } }
 
 .banner-info {
   display: flex;
@@ -1180,6 +1184,9 @@ header {
 .news-list-page-section .news-list-item {
   max-width: 360px;
   margin: 0 0 20px; }
+  @media (max-width: 767px) {
+    .news-list-page-section .news-list-item {
+      max-width: 262px; } }
   .news-list-page-section .news-list-item-img {
     max-height: 300px; }
   .news-list-page-section .news-list-item-cnt {
@@ -1484,6 +1491,9 @@ header {
           line-height: 30px;
           text-transform: uppercase;
           color: #ffffff; }
+          @media (max-width: 767px) {
+            .article-sidebar-item-img span {
+              right: 0px; } }
       .article-sidebar-item-title {
         font-family: 'Circe-Light';
         font-size: 18px;
@@ -1508,7 +1518,8 @@ header {
       font-family: 'Gilroy-Bold';
       padding-bottom: 1px;
       border-bottom: 2px solid #06828a;
-      transition: 0.3s ease; }
+      transition: 0.3s ease;
+      color: #898989; }
       .article-text a:hover {
         color: #7d2a40; }
     .article-text b {
@@ -1531,7 +1542,8 @@ header {
     margin-bottom: 15px; }
     @media (max-width: 767px) {
       .article-img:not(:last-child) {
-        margin-bottom: 2px; } }
+        margin-bottom: 10px;
+        margin-top: -5px; } }
   .article-img img {
     width: 100%; }
   .article-img-container {
@@ -1585,7 +1597,8 @@ header {
         line-height: 24px; } }
     @media (max-width: 767px) {
       .article-quote {
-        height: 55px;
+        height: auto;
+        min-height: 55px;
         padding: 0 11px;
         margin-bottom: 20px;
         background-size: 47px 39px;
@@ -1596,7 +1609,8 @@ header {
     @media (max-width: 767px) {
       .article-video {
         width: calc(100% + 40px);
-        margin-left: -20px; } }
+        margin-left: -20px;
+        padding: 18px 0; } }
     .article-video iframe,
     .article-video video {
       width: 100%;
@@ -2351,14 +2365,14 @@ header {
       background-color: #ffffff;
       transition: 0.3s ease; }
   .btn-transparent:hover span::before {
-    width: calc(100% + 80px); }
+    width: calc(100% + 26px); }
   .btn-transparent-red {
     color: #7d2a40;
     border: 1px solid #7d2a40; }
     .btn-transparent-red span::before {
       background-color: #7d2a40; }
     .btn-transparent-red:hover span::before {
-      width: calc(100% + 80px); }
+      width: calc(100% + 26px); }
 
 .card .wrapper {
   max-width: 1920px;
@@ -2398,6 +2412,7 @@ header {
     .card-info-cnt h4 {
       padding-bottom: 20px;
       font-family: "Circe-Light";
+      font-weight: 300;
       font-size: 32px;
       line-height: 42px;
       text-transform: uppercase;
@@ -2446,7 +2461,7 @@ header {
           min-height: 208px; } }
     .card-gallery-view .gallery-title {
       position: absolute;
-      top: 50%;
+      top: 44%;
       left: 50%;
       transform: translate(-50%);
       width: 100%;
@@ -2793,6 +2808,7 @@ header {
     .card-more .card-more-links h4 {
       margin-bottom: 45px;
       font-family: "Circe-Light";
+      font-weight: 300;
       font-size: 32px;
       line-height: 32px;
       text-transform: uppercase;
@@ -2822,6 +2838,7 @@ header {
           margin-bottom: 25px; }
 
 .fancybox-caption {
+  padding-bottom: 40px;
   font-family: "Circe-Bold";
   font-size: 18px;
   line-height: 18px;
@@ -2939,7 +2956,7 @@ header {
   font-size: 16px;
   line-height: 35px; }
   .popup form .btn-red-sub:hover span::before {
-    width: calc(100% + 50px); }
+    width: calc(100% + 28px); }
 
 .recapthca {
   width: 100%;

@@ -208,7 +208,7 @@
   transition: 0.3s ease;
 }
 .btn-transparent:hover span::before {
-  width: calc(100% + 80px);
+  width: calc(100% + 26px);
 }
 .btn-transparent-red {
   color: #7d2a40;
@@ -218,5 +218,5 @@
   background-color: #7d2a40;
 }
 .btn-transparent-red:hover span::before {
-  width: calc(100% + 80px);
+  width: calc(100% + 26px);
 }

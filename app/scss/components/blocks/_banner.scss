@@ -156,15 +156,19 @@
                 }
             }
             @media (max-width: 767px) {
-                font-family: 'Circe-Bold';
-                font-size: 24px;
-                line-height: 24px;
+                font-family: 'Circe-ExtraLight';
+                font-size: 30px;
+                line-height: 30px;
             }
         }
     }
     & .banner-cnt-titles {
         top: auto;
         bottom: 79px;
+        @media (max-width: 1024px) {
+            top: auto;
+            bottom: 22px;
+        }
     }
 }
 

@@ -166,12 +166,12 @@
             transition: 0.3s ease;
         }
     }
-    &:hover span::before { width: calc(100% + 80px);}
+    &:hover span::before {width: calc(100% + 26px);}
     &-red {
         color: #7d2a40;
         border: 1px solid #7d2a40;
         & span {&::before {background-color: #7d2a40;}}
-        &:hover span::before { width: calc(100% + 80px);}
+        &:hover span::before {width: calc(100% + 26px);}
     }
 }
 

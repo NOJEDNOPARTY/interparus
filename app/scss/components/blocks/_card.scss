@@ -33,6 +33,7 @@
             & h4 {
                 padding-bottom: 20px;
                 font-family: "Circe-Light";
+                font-weight: 300;
                 font-size: 32px;
                 line-height: 42px;
                 text-transform: uppercase;
@@ -75,7 +76,7 @@
             }
             .gallery-title {
                 position: absolute;
-                top: 50%;
+                top: 44%;
                 left: 50%;
                 transform: translate(-50%);
                 width: 100%;
@@ -428,6 +429,7 @@
             h4 {
                 margin-bottom: 45px;
                 font-family: "Circe-Light";
+                font-weight: 300;
                 font-size: 32px;
                 line-height: 32px;
                 text-transform: uppercase;
@@ -460,6 +462,7 @@
 }
 
 .fancybox-caption {
+    padding-bottom: 40px;
     font-family: "Circe-Bold";
     font-size: 18px;
     line-height: 18px;

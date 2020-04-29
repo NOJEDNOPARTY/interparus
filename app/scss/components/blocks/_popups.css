@@ -128,7 +128,7 @@
   line-height: 35px;
 }
 .popup form .btn-red-sub:hover span::before {
-  width: calc(100% + 50px);
+  width: calc(100% + 28px);
 }
 .recapthca {
   width: 100%;
