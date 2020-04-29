@@ -1510,7 +1510,7 @@ header {
       border-bottom: 2px solid #06828a;
       transition: 0.3s ease; }
       .article-text a:hover {
-        border-bottom: 2px solid transparent; }
+        color: #7d2a40; }
     .article-text b {
       font-family: 'Gilroy-Bold'; }
   .article .green-bold {
@@ -2306,7 +2306,8 @@ header {
   background: none;
   outline: none;
   color: #ffffff;
-  border-bottom: 1px solid #ffffff; }
+  border-bottom: 1px solid #ffffff;
+  border-radius: 0 !important; }
   .form-line.error {
     border-bottom: 1px solid red; }
   @media (max-width: 500px) {
@@ -2924,7 +2925,9 @@ header {
 .popup form .form-field {
   max-width: 254px;
   border: 1px solid #cbcbcb;
-  color: #c0c0c0; }
+  color: #c0c0c0;
+  border-radius: 0 !important;
+  outline: none; }
   .popup form .form-field:not(:last-child) {
     margin-bottom: 14px; }
 

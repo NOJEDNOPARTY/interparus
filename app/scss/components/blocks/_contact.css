@@ -1,0 +1,222 @@
+.contact {
+  padding: 154px 0 112px;
+}
+@media (max-width: 1100px) {
+  .contact {
+    padding: 50px 0;
+  }
+}
+.contact-info-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+@media (max-width: 992px) {
+  .contact-info-row {
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+}
+.contact-info-row:not(:last-child) {
+  margin-bottom: 45px;
+}
+@media (max-width: 992px) {
+  .contact-info-row:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+.contact-info-row-2 {
+  align-items: center;
+}
+.contact .link-block-title {
+  margin-bottom: 0;
+  font-family: "Circe-Regular";
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #393939;
+}
+@media (max-width: 992px) {
+  .contact .link-block-title {
+    text-align: center;
+  }
+}
+.contact .link-block p,
+.contact .link-block a {
+  font-family: "Circe-Light";
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 0.7px;
+  color: #393939;
+}
+.contact .link-block-social {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 10px;
+}
+@media (max-width: 450px) {
+  .contact .link-block-social {
+    align-items: flex-start;
+  }
+}
+.contact .link-block-social .link-block-title {
+  line-height: 21px;
+  margin-right: 15px;
+}
+.contact .link-block-social a:not(:last-child) {
+  margin-right: 13px;
+}
+.contact .link-block-social a img.whatsapp {
+  width: 30px;
+}
+.contact .link-block-social a img.facebook {
+  width: 28px;
+}
+.contact .link-block-social a img.instagram {
+  width: 28px;
+}
+.contact .link-block-social a img.youtube {
+  width: 38px;
+}
+.contact .link-block-social a img.twitter {
+  width: 35px;
+}
+.contact .link-block-social a img.pintarest {
+  width: 29px;
+}
+.contact-form {
+  padding-bottom: 274px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: center;
+}
+@media (max-width: 1100px) {
+  .contact-form {
+    padding-bottom: 90px;
+  }
+}
+.contact-form form {
+  width: 100%;
+}
+.contact-form-title {
+  margin-bottom: 65px;
+  font-family: "Circe-Bold";
+  font-size: 149px;
+  line-height: 125px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+@media (max-width: 992px) {
+  .contact-form-title {
+    margin-bottom: 40px;
+    font-size: 80px;
+    line-height: 67px;
+  }
+}
+@media (max-width: 500px) {
+  .contact-form-title {
+    margin-bottom: 30px;
+    font-size: 40px;
+    line-height: 27px;
+  }
+}
+.contact-form-title span {
+  display: block;
+  font-size: 60px;
+  line-height: 72px;
+}
+@media (max-width: 992px) {
+  .contact-form-title span {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+@media (max-width: 992px) {
+  .contact-form-title span {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+.form-line {
+  display: block;
+  width: 100%;
+  max-width: 488px;
+  margin-bottom: 18px;
+  height: 37px;
+  padding: 9px 5px 10px 15px;
+  font-family: "Gilroy-Regular";
+  font-size: 18px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background: none;
+  outline: none;
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+  border-radius: 0 !important;
+}
+.form-line.error {
+  border-bottom: 1px solid red;
+}
+@media (max-width: 500px) {
+  .form-line {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+.form-line:-ms-input-placeholder {
+  color: #ffffff;
+}
+.form-line::-webkit-input-placeholder {
+  color: #ffffff;
+}
+.form-line:-moz-placeholder,
+.form-line::-moz-placeholder {
+  color: #ffffff;
+}
+.btn-transparent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 488px;
+  height: 46px;
+  font-family: "Gilroy-Regular";
+  font-size: 18px;
+  line-height: 46px;
+  text-transform: uppercase;
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  transition: 0.3s ease;
+}
+.btn-transparent span {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+.btn-transparent span::before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 0.5px);
+  right: -40px;
+  display: block;
+  width: 31px;
+  height: 1px;
+  background-color: #ffffff;
+  transition: 0.3s ease;
+}
+.btn-transparent:hover span::before {
+  width: calc(100% + 80px);
+}
+.btn-transparent-red {
+  color: #7d2a40;
+  border: 1px solid #7d2a40;
+}
+.btn-transparent-red span::before {
+  background-color: #7d2a40;
+}
+.btn-transparent-red:hover span::before {
+  width: calc(100% + 80px);
+}
