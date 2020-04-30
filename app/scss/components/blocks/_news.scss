@@ -320,7 +320,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            padding-bottom: 50px;
+            padding: 30px 0 15px;
         }
         &.fixed {position: fixed;}
         &-info {
@@ -365,6 +365,7 @@
         position: relative;
         padding: 160px 0 0;
         overflow: hidden;
+        &-card {padding-top: 0;}
         @media (max-width: 1370px) {padding: 85px 0 0;}
     }
     &-block {
@@ -472,7 +473,7 @@
             transition: 0.3s ease;
             color: #898989;
             &:hover {
-                color: #7d2a40;
+                color: #06828a;
             }
         }
         & b {font-family: 'Gilroy-Bold';}
@@ -725,6 +726,7 @@
         font-size: 32px;
         line-height: 32px;
         padding-left: 0;
+        @media (max-width: 1150px) {padding: 0 20px;}
         @media (max-width: 767px) {
             margin-bottom: 47px;
             font-size: 26px;

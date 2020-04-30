@@ -220,3 +220,6 @@
 .btn-transparent-red:hover span::before {
   width: calc(100% + 26px);
 }
+body {
+  overflow-x: hidden;
+}

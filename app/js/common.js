@@ -61,31 +61,6 @@ var common = {
 		 }
 		});
 
-		var galleryList = $('.card-gallery-list');
-
-		galleryList.each(function(item){
-			var galleryListItem = $(this).find('a').length
-			var itemLink = $(this).find('a');
-			if(galleryListItem > 6) {
-				itemLink.each(function(index){
-					var itemB = $(this).find('span');
-					if($(window).width() > 550) {
-						if(index == 5) {
-							itemB.css('opacity', '1')
-							itemB.find('img').remove();
-							itemB.text('+' + (galleryListItem - 6))
-						}
-					}else {
-						if(index == 3) {
-							itemB.css('opacity', '1')
-							itemB.find('img').remove();
-							itemB.text('+' + (galleryListItem - 4))
-						}
-					}
-				})
-			}
-		});
-
 		new WOW().init();
 
 		$('.phone-mask').mask("+380 (99) 999-99-99");
@@ -106,9 +81,16 @@ var common = {
 		}else {
 			$(".menu .menu-level-trigger span").click(function(e){
 				e.preventDefault();
-				$(this).closest('li').toggleClass('open');
-				$('header').toggleClass('step-two');
-				$(this).closest('li').find('.hidden-menu').toggle();
+				$(this).closest('li').addClass('open');
+				$('header').addClass('step-two');
+				$(this).closest('li').find('.hidden-menu').show();
+				$('.search-field').slideUp("fast");
+			});
+			$(".close-hidden-menu").click(function(e){
+				e.preventDefault();
+				$(this).closest('.menu-level-trigger').removeClass('open');
+				$('header').removeClass('step-two');
+				$(this).closest('.hidden-menu').hide();
 				$('.search-field').slideUp("fast");
 			});
 		}
@@ -153,6 +135,31 @@ var common = {
 			$('#subscribePopup').show('fast');
 			$('body').addClass('hidden');
 		}, 50000)
+
+		var galleryList = $('.card-gallery-list');
+
+		galleryList.each(function(item){
+			var galleryListItem = $(this).find('a').length
+			var itemLink = $(this).find('a');
+			if(galleryListItem > 6) {
+				itemLink.each(function(index){
+					var itemB = $(this).find('span');
+					if($(window).width() > 550) {
+						if(index == 5) {
+							itemB.css('opacity', '1')
+							itemB.find('img').remove();
+							itemB.text('+' + (galleryListItem - 6))
+						}
+					}else {
+						if(index == 3) {
+							itemB.css('opacity', '1')
+							itemB.find('img').remove();
+							itemB.text('+' + (galleryListItem - 4))
+						}
+					}
+				})
+			}
+		});
 
 	},
 	
