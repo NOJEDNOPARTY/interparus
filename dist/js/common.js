@@ -66,7 +66,7 @@ var common = {
 		$('.phone-mask').mask("+380 (99) 999-99-99");
 
 		if($(window).width() > 1024) {
-			$(".menu .menu-level-trigger span").click(function(){
+			$(".menu .menu-level-trigger").hover(function(){
 				if($(this).closest('li').hasClass('open') == false){
 					$(".menu .menu-level-trigger span").closest('li').removeClass('open');
 					$(".menu .menu-level-trigger span").closest('li').find('.hidden-menu').hide('fast');
@@ -148,13 +148,13 @@ var common = {
 						if(index == 5) {
 							itemB.css('opacity', '1')
 							itemB.find('img').remove();
-							itemB.text('+' + (galleryListItem - 6))
+							itemB.text(galleryListItem - 6)
 						}
 					}else {
 						if(index == 3) {
 							itemB.css('opacity', '1')
 							itemB.find('img').remove();
-							itemB.text('+' + (galleryListItem - 4))
+							itemB.text(galleryListItem - 4)
 						}
 					}
 				})
