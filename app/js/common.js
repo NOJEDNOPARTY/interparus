@@ -69,13 +69,13 @@ var common = {
 			$(".menu .menu-level-trigger").hover(function(){
 				if($(this).closest('li').hasClass('open') == false){
 					$(".menu .menu-level-trigger span").closest('li').removeClass('open');
-					$(".menu .menu-level-trigger span").closest('li').find('.hidden-menu').hide('fast');
+					$(".menu .menu-level-trigger span").closest('li').find('.hidden-menu').hide();
 					$(this).closest('li').addClass('open');
-					$(this).closest('li').find('.hidden-menu').show('fast');
+					$(this).closest('li').find('.hidden-menu').show();
 					$('.search-field').slideUp("fast");
 				}else{
 					$(this).closest('li').removeClass('open');
-					$(this).closest('li').find('.hidden-menu').hide('fast');
+					$(this).closest('li').find('.hidden-menu').hide();
 				}
 			});
 		}else {
